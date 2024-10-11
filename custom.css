@@ -1,0 +1,225 @@
+/* Apply a web-safe font to the entire website */
+html, body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px; /* Default font size */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+/* Style the entire header */
+header {
+    background-color: #d3d3d3; /* Light gray background */
+    border-bottom: 3px solid #333; /* Darker border */
+    padding: 20px; /* Extra padding to make it more spacious */
+}
+
+/* Style the text next to the logo */
+header .fs-4 {
+    color: #04386e; /* Custom color for the header text */
+    font-weight: bold; /* Make the header text bold */
+    margin-left:15px ;
+}
+
+/* Style the navigation links */
+.nav-pills .nav-link {
+    color: #333; /* Default color for all links */
+    font-size: 18px; /* Slightly increase the font size */
+    margin-left: 10px; /* Add space between each link */
+    padding: 10px 20px; /* Add padding to the links */
+    border-radius: 5px; /* Round the edges of the nav items */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Style for the active navigation link */
+.nav-pills .nav-link.active {
+    background-color: #0f3661; /* Custom background color for active link */
+    color: #fff; /* White text for the active link */
+}
+
+/* Hover effect for non-active links */
+.nav-pills .nav-link:hover {
+    background-color: #0f3661; /* Change background on hover */
+    color: #fff; /* White text on hover */
+}
+/* Custom styles for the title and search bar */
+h2{
+    color: #630000; /* Custom title color */
+    font-size: 36px; /* Increase font size for the title */
+    font-weight: bold; /* Make the header text bold */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+h4{
+    color: #630000; /* Custom title color */
+    font-size: 20px; /* Increase font size for the title */
+    font-weight: bold; /* Make the header text bold */
+    margin-bottom: 10px; /* Remove bottom margin */
+}
+
+/* Style for the search form container */
+.search-form {
+    max-width: 500px; /* Limits the search form width */
+    margin: auto; /* Centers the form */
+}
+
+/* Style for the search input */
+.search-input {
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #ced4da; /* Light gray border */
+    padding: 10px; /* Extra padding inside the input */
+    font-size: 1.1rem; /* Larger font size */
+    box-shadow: none; /* Removes default shadow */
+    transition: border-color 0.3s ease; /* Smooth transition for border on focus */
+}
+
+/* Focused input style */
+.search-input:focus {
+    border-color: #0056b3; /* Changes border to blue on focus */
+    outline: none; /* Removes the default outline */
+}
+
+/* Style for the search button */
+.search-btn {
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Adds padding for a larger clickable area */
+    background-color: #0f3661; /* Blue background for the button */
+    color: white; /* White text color */
+    border: none; /* Removes border */
+    font-size: 1.1rem; /* Slightly larger font */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect for search button */
+.search-btn:hover {
+    background-color: #0f3761b7; /* Darker blue on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .search-form {
+        max-width: 100%; /* Makes the search form full width on smaller screens */
+    }
+    
+    .search-input {
+        width: 100%; /* Makes the input field take full width on mobile */
+    }
+}
+/* Style for the left navigation box */
+.nav-box {
+    background-color: #d3d3d3;
+    padding: 10px;
+    border: 1px solid #0f3761b7;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300
+px;    
+}
+
+/* Hide all videos by default */
+.video-item {
+    display: none;
+}
+.card {
+    margin-bottom: 100px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 225px; /* Consistent height for video thumbnails */
+    width: 100%;
+    background-color: #630000; /* Light background for the album section */
+}
+
+.custom-red-btn {
+    background-color: #630000; /* Custom red background */
+    color: white; /* White text */
+    border: 2px solid #630000; /* Red border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.custom-red-btn:hover {
+    background-color: white; /* White background on hover */
+    color: #630000; /* Red text on hover */
+    border-color: #630000; /* Keep the red border */
+}
+
+
+.album {
+    background-color: #f7f7f7; /* Light background for the album section */
+}
+.custom-album-bg {
+    background-color: #ffffff; /* Custom background color*/
+    
+}
+
+
+.card-body {
+    padding: px;
+}
+
+.btn-group .btn {
+    font-size: 0.875rem; /* Smaller button text */
+}
+
+.text-muted {
+    font-size: 0.75rem; /* Smaller text for the video duration */
+}
+/* Custom styling for the modal */
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-body video {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Default unselected state */
+.category-btn {
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    position: relative;
+    margin-bottom: 5px; /* Adds space between categories */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px 0px; /* Adds padding */
+    background-color: #ffffffdc; /* Default background (unselected) */
+    color: #0f3761; /* Text color */
+    border: 1px solid #0f3761b7;
+    font-size: 1rem; /* Slightly larger font */
+    width: 100%; /* Full width */
+    height: 50px; /* Ensure consistent height for vertical centering */
+    text-align: center; /* Align text to the left */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+}
+
+/* Hover state */
+.category-btn:hover {
+    background-color: #0c2a4ea4; /* Darker blue on hover */
+    color: white; /* Keep white text */
+}
+
+/* Selected state */
+.category-btn.selected {
+    background-color: #0c2a4e; /* Tomato color when selected */
+    color: white; /* Keep white text */
+}
+
+/* Optional styling for the subcategory list */
+.subcategory {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.subcategory input[type="checkbox"] {
+    margin-right: 10px;
+}
